@@ -12,5 +12,9 @@
       "src": "/api/(.*)",        
       "dest": "/api/index.php"      
     }
-  ]
+  ],
+  "build": {
+    "command1":"composer dump-autoload",
+    "command": "composer install"
+  }
 }
