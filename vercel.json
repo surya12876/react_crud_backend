@@ -4,8 +4,8 @@
     {
       "src": "api/index.php",     
       
-      "use": "@vercel/php",
-      "runtime": "vercel-php@0.6.1"    
+      "use": "@vercel/php"
+     
       
     }
   ],
