@@ -1,20 +1,19 @@
-{
-  "version": 2,
-  
-    "functions": {
-      "api/*.php": {
-        "runtime": "vercel-php@0.7.3"
+  {
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/index.php",     
+        
+        "use": "@vercel/php"
+      
+        
       }
-    },
-  
-  "routes": [
-    {
-      "src": "/api/(.*)",        
-      "dest": "/api/index.php"      
-    }
-  ],
-  "build": {
-    "command1":"composer dump-autoload",
-    "command": "composer install"
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",        
+        "dest": "/api/index.php"      
+      }
+    ]
+    
   }
-}
