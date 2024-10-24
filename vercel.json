@@ -11,9 +11,8 @@
       "src": "/api/(.*)",
       "dest": "/api/index.php"
     }
-  ],
+  ]
  
    
-    "command": "composer install"
-  
+   
 }
